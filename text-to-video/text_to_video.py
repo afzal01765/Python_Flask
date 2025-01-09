@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 
 app =Flask(__name__)
 
-os.environ["FAL_KEY"] ="9f4a6e2c-634c-4a3a-ae9b-0d1953019fda:7683db89f004a3f48edd3b3bed259786"
+os.environ["FAL_KEY"] ="USE_YOUR_API_KEY"
 def on_queue_update(update):
     if isinstance(update, fal_client.InProgress):
         for log in update.logs:
