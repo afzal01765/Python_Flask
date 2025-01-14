@@ -25,6 +25,7 @@ def index():
 		db.session.add(upload)
 		db.session.commit()
 		return f'Uploaded: {file.filename}'
+		
 	return render_template('index.html')
 
 # create download function for download files
