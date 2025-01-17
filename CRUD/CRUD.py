@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 # Sample data (can be replaced with a database)
 books = {
-    1: {'id': 1, 'name': 'John Doe', 'email': 'johndoe@example.com'},
-    2: {'id': 2, 'name': 'Jane Smith', 'email': 'janesmith@example.com'}
+    ['id': 1, 'name': 'John Doe', 'email': 'johndoe@example.com'],
+    ['id': 2, 'name': 'Jane Smith', 'email': 'janesmith@example.com']
 }
 
 # Get all books
