@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter API</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Filter Application</h1>
+        <form id="uploadForm">
+            <label for="file">Upload an Image:</label>
+            <input type="file" id="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        <div id="filters" class="hidden">
+            <h2>Select a Filter</h2>
+            <select id="filterSelect">
+                <option value="BLUR">Blur</option>
+                <option value="CONTOUR">Contour</option>
+                <option value="DETAIL">Detail</option>
+                <option value="EDGE_ENHANCE">Edge Enhance</option>
+                <option value="SHARPEN">Sharpen</option>
+            </select>
+            <button id="applyFilter">Apply Filter</button>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Filtered Image</h2>
+            <img id="filteredImage" src="" alt="Filtered result">
+            <a id="downloadLink" href="#" download>Download Image</a>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
